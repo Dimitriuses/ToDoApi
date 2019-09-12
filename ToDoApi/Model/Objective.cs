@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ToDoApi.Model
 {
-    public class Task
+    public class Objective
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,6 +15,6 @@ namespace ToDoApi.Model
         public bool Status { get; set; }
 
         public virtual Category Category { get; set; }
-        public virtual ICollection<Mark> Marks { get; set; }
+        public virtual ICollection<MarkObjective> Marks { get; set; }
     }
 }
